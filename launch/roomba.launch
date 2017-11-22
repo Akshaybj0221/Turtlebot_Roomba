@@ -1,0 +1,18 @@
+<launch>
+	
+      <arg name="record" default="false"/>
+      
+      <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+      </include>
+
+
+     <node name="turtlebot_roomba" pkg="turtlebot_roomba" type="turtlebot_roomba" 
+     	output="screen">
+     </node>
+
+     <node name="record" pkg="rosbag" type="record"
+        args="-a -O $(find roomba_robot)/results/record.bag -x /camera/(.*)"
+        if="$(eval record==true)" >
+     </node>
+
+</launch>
