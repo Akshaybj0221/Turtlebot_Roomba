@@ -6,7 +6,7 @@
 class Walker {
  public:
   Walker(ros::NodeHandle& nh);
-  void callback(const sensor_msgs::LaserScan::ConstPtr& insensors);
+  void callback(const sensor_msgs::LaserScan::ConstPtr& insensor);
   ~Walker();
  private:
   double dist;
