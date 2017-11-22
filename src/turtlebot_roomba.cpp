@@ -1,4 +1,5 @@
 #include "ros/ros.h"
+#include "turtlebot_roomba.h" // NOLINT
 
 void Roomba::callback(const sensor_msgs::LaserScan::ConstPtr& insensor) {
   double min = 0;

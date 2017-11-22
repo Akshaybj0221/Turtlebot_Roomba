@@ -7,6 +7,6 @@
 int main(int argc, char **argv) {
   ros::init(argc, argv, "roomba");
   ros::NodeHandle nh;
-  Roomba walk(nh);
+  Walker walk(nh);
   return 0;
 }
