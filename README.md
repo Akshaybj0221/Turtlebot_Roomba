@@ -73,9 +73,3 @@ rosbag play record.bag
 
 1. cpplint and cppcheck output files are added in the *results* folder.
 
-2. screenshots are added in the *output* folder.
-
-3. *msg* folder is to be ignored as it has nothing relevant to the project.
-
-4. *config* folder contains the custom log file.
-
