@@ -47,7 +47,7 @@ roslaunch turtlebot_roomba roomba.launch
 ```bash
 cd ~/catkin_ws
 source devel/setup.bash
-roslaunch turtlebot_roomba roomba.launch record:=true
+roslaunch roomba_robot roomba.launch record:=true
 ```
 The bag file will be stored in the results sub-directory as record.bag
 
