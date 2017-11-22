@@ -65,12 +65,12 @@ Walker::Walker(ros::NodeHandle& nh) {
       > ("/mobile_base/commands/velocity", 1);
   ros::Rate loop_rate(2);
   while (nh.ok()) {
-   // Twist message is initiated
+  // Twist message is initiated
     msg.linear.x = 0.0;
     msg.angular.z = 0.0;
-   // Checks if object is in the range or not
+  // Checks if object is in the range or not
     if (dist > 0.8) {
-   // Moves forward
+  // Moves forward
       msg.linear.x = 0.1;
       ROS_INFO_STREAM("Go!");
     } else {
