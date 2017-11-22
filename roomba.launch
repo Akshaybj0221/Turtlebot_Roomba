@@ -1,0 +1,12 @@
+<launch>
+	
+	<arg name="record" default="false"/>
+      <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+      	   </include>
+
+
+     <node name="turtlebot_roomba" pkg="turtlebot_roomba" type="turtlebot_roomba" 
+     	output="screen">
+     </node>
+
+</launch>
