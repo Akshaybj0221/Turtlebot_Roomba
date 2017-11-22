@@ -1,0 +1,6 @@
+viki@ubuntu:~/catkin_ws/src$ cppcheck roomba_robot/
+Checking roomba_robot/src/main.cpp...
+1/2 files checked 50% done
+Checking roomba_robot/src/turtlebot_roomba.cpp...
+2/2 files checked 100% done
+
